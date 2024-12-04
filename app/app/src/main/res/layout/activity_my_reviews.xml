@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF1D8"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="돌아가기"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_button"/>
+
+    <TextView
+        android:id="@+id/no_reviews_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="작성된 리뷰가 없습니다."
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:background="@drawable/content_wrapper"
+        android:dividerHeight="8dp"
+        android:divider="@android:color/transparent"/>
+</LinearLayout>

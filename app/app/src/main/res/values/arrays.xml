@@ -1,0 +1,24 @@
+<resources>
+    <string-array name="restaurant_categories">
+        <item>한식</item>
+        <item>중식</item>
+        <item>일식</item>
+        <item>양식</item>
+        <item>분식</item>
+        <item>치킨</item>
+        <item>피자</item>
+        <item>국수</item>
+        <item>디저트</item>
+        <item>카페</item>
+        <item>버거</item>
+        <item>생선회</item>
+        <item>구이</item>
+        <item>육류</item>
+        <item>뷔페</item>
+    </string-array>
+    <string-array name="search_distances">
+        <item>특별시/도</item>
+        <item>시/구/군</item>
+        <item>동/읍/면</item>
+    </string-array>
+</resources>

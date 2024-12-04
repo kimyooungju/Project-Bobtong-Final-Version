@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item
+        android:id="@+id/action_category"
+        android:icon="@drawable/ic_category"
+        android:title="カテゴリー" /> -->
+    <item
+        android:id="@+id/action_category"
+        android:icon="@drawable/ic_category"
+        android:title="카테고리 검색" />
+    <item
+        android:id="@+id/action_bookmark"
+        android:icon="@drawable/ic_bookmark"
+        android:title="북마크" />
+    <item
+        android:id="@+id/action_mypage"
+        android:icon="@drawable/ic_mypage"
+        android:title="마이페이지" />
+</menu>

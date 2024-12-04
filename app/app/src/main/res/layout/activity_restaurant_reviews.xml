@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF1D8">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:text="돌아가기"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_button"/>
+
+    <Button
+        android:id="@+id/buttonSubmitReview"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginBottom="10dp"
+        android:text="리뷰 작성하기"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:background="@drawable/input_button"/>/>
+
+    <ImageView
+        android:id="@+id/imageViewReviewPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/no_reviews_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="작성한 리뷰가 없습니다."
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:background="@drawable/content_wrapper"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- 상태 바 색상 설정 -->
+        <item name="android:statusBarColor">#FFB433</item>
+    </style>
+</resources>

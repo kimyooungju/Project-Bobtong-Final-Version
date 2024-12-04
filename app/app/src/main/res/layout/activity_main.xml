@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- SlidingUpPanelLayout: 검색 결과를 포함하는 레이아웃 -->
+
+    <!-- 검색 바와 버튼 -->
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="bottom"
+        app:umanoInitialState="collapsed"
+        app:umanoPanelHeight="0dp"
+        app:umanoShadowHeight="25dp">
+
+        <!-- FrameLayout: 지도 -->
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+        </FrameLayout>
+
+        <!-- 검색 결과 패널을 담을 LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:alpha="0.8"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:paddingLeft="2dp"
+            android:id="@+id/buttonRefresh"
+            android:layout_width="90dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="78dp"
+            android:text="새로고침"
+            android:textSize="14dp"
+            android:layout_marginBottom="6dp"
+            android:elevation="6dp"
+            android:textColor="#767676"
+            android:drawablePadding="-8dp"
+            android:background="@drawable/button_background"
+            android:drawableLeft="@drawable/refresh_24px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:hint="음식점을 입력해주세요"
+            android:padding="10dp"
+            android:background="@drawable/content_wrapper" />
+
+            <Button
+                android:id="@+id/buttonSearch"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:elevation="4dp"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"
+                android:text="검색"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:drawablePadding="-4dp"
+                android:background="@drawable/search_input_wrapper"
+                android:drawableTop="@drawable/map_search_24px">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/getUserCurrentAddress"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="현제위치 주소가 없습니다"
+            android:background="@drawable/user_look_address_wrapper"
+            android:drawableLeft="@drawable/distance_24px"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"/>
+
+
+    <!-- 바텀 네비게이션 뷰 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:itemPaddingBottom="10dp"
+        app:itemPaddingTop="10dp"
+        app:menu="@menu/bottom_navigation_menu"
+        app:itemIconTint="@color/nav_item_iconcolor"
+        app:itemTextColor="@color/nav_item_textcolor"
+        app:itemBackground="@color/nav_item_background" />
+    </LinearLayout>
+</RelativeLayout>

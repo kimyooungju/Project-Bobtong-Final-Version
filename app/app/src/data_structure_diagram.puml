@@ -1,0 +1,62 @@
+@startuml
+
+skinparam dpi 150
+left to right direction
+skinparam linetype ortho
+
+entity "User_Reviews" as User_Reviews {
+    * userId : String [FK]
+    --
+    review : String
+}
+
+entity "Users" as Users {
+    * userId : String
+    --
+    email : String
+    handle : String
+}
+
+entity "Restaurant_Reviews" as Restaurant_Reviews {
+    * reviewId : String
+    --
+    restaurantId : String [FK]
+    reviewText : String
+    userId : String [FK]
+}
+
+entity "Bookmarks" as Bookmarks {
+    * id : String
+    --
+    userId : String [FK]
+    address : String
+    category : String
+    latitude : Float
+    longitude : Float
+    mapx : Int
+    mapy : Int
+    title : String
+}
+
+entity "Restaurants" as Restaurants {
+    * id : String
+    --
+    address : String
+    category : String
+    latitude : Float
+    longitude : Float
+    mapx : Int
+    mapy : Int
+    title : String
+}
+
+Users ||--o{ Bookmarks : "has"
+Users ||--o{ User_Reviews : "has"
+Restaurants ||--o{ Restaurant_Reviews : "has"
+Users ||--o{ Restaurant_Reviews : "writes"
+
+Bookmarks ||--o{ Restaurants : "references"
+Restaurant_Reviews ||--o{ User_Reviews : "references"
+User_Reviews ||--o{ Restaurant_Reviews : "references"
+
+@enduml

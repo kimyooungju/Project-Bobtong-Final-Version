@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_content_wrapper"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User ID" />
+
+    <TextView
+        android:id="@+id/textViewReviewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review" />
+
+    <TextView
+        android:id="@+id/textViewTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작성일시"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <!-- 추가된 ImageView -->
+    <ImageView
+        android:id="@+id/imageViewReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />  <!-- 기본적으로 이미지가 없을 때 숨김 -->
+
+</LinearLayout>

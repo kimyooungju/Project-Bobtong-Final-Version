@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF1D8">
+
+    <LinearLayout
+        android:layout_marginTop="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/content_wrapper">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="환영합니다!"
+            android:textSize="24dp"
+            android:textColor="#707070"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="로그인 된 계정"
+                android:textColor="#707070"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:gravity="center"
+                android:background="@drawable/content_wrapper"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/userEmailText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="shingu@g.shingu.ac.kr"
+                android:textColor="#707070"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:gravity="center|left"
+                android:background="@drawable/content_wrapper"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="로그아웃"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_button"/>
+
+        <Button
+            android:id="@+id/buttonMainPage"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="메인페이지로 돌아가기"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_button"/>
+
+        <Button
+            android:id="@+id/buttonMyReviews"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="내 리뷰 보기"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_button"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="20dp"
+    android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/dialog_content_wrapper">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_wrapper"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/restaurant_name_info_wrapper">
+
+            <TextView
+                android:id="@+id/getFoodTitle"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center|left"
+                android:paddingLeft="15dp"
+                android:textStyle="bold"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/restaurant_24px"
+                android:hint="등록되지 않은 음식점입니다."
+                android:textSize="18dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/restaurant_info_wrapper">
+
+            <TextView
+                android:id="@+id/getFoodAddress"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:paddingLeft="15dp"
+                android:gravity="center|left"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/home_pin_24px"
+                android:hint="등록되지 않은 음식점입니다."
+                android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/restaurant_info_wrapper">
+
+            <TextView
+                android:id="@+id/getFoodCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:gravity="center|left"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/category_24px"
+                android:hint="등록되지 않은 음식점입니다."
+                android:textSize="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="950px"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="8dp">
+
+            <Button
+                android:id="@+id/buttonBookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:paddingRight="22dp"
+                android:paddingLeft="22dp"
+                android:text="북마크 추가/제거"
+                android:textStyle="bold"
+                android:textColor="#FFB433"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/input_button2"/>
+
+            <Button
+                android:id="@+id/buttonViewReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:paddingRight="22dp"
+                android:paddingLeft="22dp"
+                android:text="리뷰 보기"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/input_button"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

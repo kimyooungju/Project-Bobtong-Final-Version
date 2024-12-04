@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 눌렸을 때 배경 색상 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#DF9412" /> <!-- 눌렸을 때 색상 -->
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+
+    <!-- 기본 상태 배경 색상 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFB433" /> <!-- 기본 색상 -->
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+</selector>
